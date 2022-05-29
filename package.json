@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node .",
-    "dev": "env $(cat .env) npx nodemon ."
+    "dev": "source .env && npx nodemon ."
   },
   "keywords": [],
   "author": "",
