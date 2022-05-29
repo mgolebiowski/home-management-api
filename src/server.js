@@ -1,8 +1,10 @@
 const express = require('express');
+var cors = require('cors');
 
 function initHTTPServer(dataClient) {
     const { getAllData } = dataClient;
     const app = express();
+    app.use(cors());
 
     app.get('/', (req, res) => {
         return res.json({ status: 'OK' });
